@@ -1,6 +1,9 @@
 @extends('lte_layout.master')
 
 @section('content')
+  <div class="ml-2 mt-2">
+  <a href="{{route('pertanyaan.index')}}" class="btn btn-light"> Back </a>
+  </div>
   <div class="ml-2">	
 	<form action="{{route('pertanyaan.store')}}" method='post'>
 	  @csrf

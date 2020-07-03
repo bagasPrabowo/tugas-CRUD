@@ -1,6 +1,9 @@
 @extends('lte_layout.master')
 
 @section('content')
+  <div class="mt-2 ml-2">
+  <a href="{{route('pertanyaan.index')}}" class="btn btn-light"> Back </a>
+  </div>
   <div class="ml-2">	
 	<form action="{{route('pertanyaan.update', ['id' => $id->id])}}" method='post'>
 	  @method('put')

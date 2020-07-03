@@ -1,7 +1,9 @@
 @extends('lte_layout.master')
 
 @section('content')
- 
+ <div class="ml-2 mt-2">
+  <a href="{{route('pertanyaan.index')}}" class="btn btn-light"> Back </a>
+  </div>
   @if(isset($pertanyaan))
     <div class="card ml-2 mt-2">
       <div class="card-body">
